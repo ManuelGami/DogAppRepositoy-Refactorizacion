@@ -1,4 +1,4 @@
-package com.mexiti.catphotoapp.ui.theme
+package com.mexiti.dogphotoapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

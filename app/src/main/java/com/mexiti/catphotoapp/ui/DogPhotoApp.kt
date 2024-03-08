@@ -13,32 +13,35 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.mexiti.catphotoapp.R
 import com.mexiti.catphotoapp.ui.screens.HomeScreen
+
+import com.mexiti.catphotoapp.ui.viewmodel.DogViewModel
 
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CatApp(){
+fun DogApp(){
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
     Scaffold(
         modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
-        topBar = { CatTopBar(scrollBehavior = scrollBehavior)}
+        topBar = { DogTopBar(scrollBehavior = scrollBehavior)}
     ) {
         Surface(
             modifier = Modifier.fillMaxSize()) {
-            HomeScreen(catUiState = stringResource(id = R.string.placeholder_result), contentPadding = it)
+val dogViewModel:DogViewModel=viewModel()
+
+            HomeScreen(dogUiState = dogViewModel.dogUiState, contentPadding = it)
 
         }
 
     }
 }
 
-
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CatTopBar(scrollBehavior: TopAppBarScrollBehavior,modifier:Modifier = Modifier){
+fun DogTopBar(scrollBehavior: TopAppBarScrollBehavior,modifier:Modifier = Modifier){
     CenterAlignedTopAppBar(
         title = {
             Text(

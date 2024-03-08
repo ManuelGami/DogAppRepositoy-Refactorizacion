@@ -10,16 +10,17 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.mexiti.catphotoapp.ui.CatApp
-import com.mexiti.catphotoapp.ui.theme.CatPhotoAppTheme
+
+import com.mexiti.catphotoapp.ui.DogApp
+import com.mexiti.dogphotoapp.ui.theme.DogPhotoAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            CatPhotoAppTheme {
-                // A surface container using the 'background' color from the theme
-                CatApp()
+            DogPhotoAppTheme {
+                //Initial App without Model
+                DogApp()
             }
         }
     }

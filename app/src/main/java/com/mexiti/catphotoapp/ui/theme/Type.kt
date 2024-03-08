@@ -1,4 +1,4 @@
-package com.mexiti.catphotoapp.ui.theme
+package com.mexiti.dogphotoapp.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
