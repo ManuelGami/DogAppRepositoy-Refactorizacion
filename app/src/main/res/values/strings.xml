@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">DogPhotoAppManuel</string>
     <string name="placeholder_result">Result of get photos from web!</string>
+    <string name="dog_image">Dog image</string>
 </resources>
