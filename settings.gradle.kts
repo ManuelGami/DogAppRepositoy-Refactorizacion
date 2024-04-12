@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "DogPhotoApp"
 include(":app")
+include(":app:rules")
+include(":app:rules2")
